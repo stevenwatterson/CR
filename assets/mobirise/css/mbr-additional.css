@@ -1585,7 +1585,7 @@ a {
 .cid-srKur2Rx0o {
   padding-top: 0rem;
   padding-bottom: 0rem;
-  background: #fafafa;
+  background: #ffffff;
 }
 .cid-srKur2Rx0o .team-card {
   margin-bottom: 2rem;
@@ -1626,7 +1626,7 @@ a {
   margin-right: 0.6rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  border: 2px solid #6592e6;
+  border: 2px solid #e43f3f;
   transition: all 0.3s;
 }
 .cid-srKur2Rx0o .social-row .soc-item .mbr-iconfont {
@@ -1634,11 +1634,11 @@ a {
   display: flex;
   justify-content: center;
   align-content: center;
-  color: #6592e6;
+  color: #e43f3f;
   font-size: 1.5rem;
 }
 .cid-srKur2Rx0o .social-row .soc-item:hover {
-  background-color: #6592e6;
+  background-color: #e43f3f;
 }
 .cid-srKur2Rx0o .social-row .soc-item:hover .mbr-iconfont {
   color: #ffffff;

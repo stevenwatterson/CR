@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "CardioRISC",
-    "currentPage": "ourteam.html",
+    "currentPage": "publications.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -41,7 +41,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 33,
+    "uniqCompNum": 40,
     "versionPublish": "5.3.0",
     "screenshot": "screenshot.png"
   },
@@ -1003,6 +1003,76 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "list-style": "none",
+                "padding-left": "2.5rem",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "position": "relative",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "position": "relative",
+                    "padding-left": "1rem",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-40px",
+                      "content": "\"\"",
+                      "display": "flex",
+                      "justify-content": "center",
+                      "align-items": "center",
+                      "color": "contrast(@iconColor)",
+                      "background-color": "@iconColor",
+                      "width": "40px",
+                      "height": "40px",
+                      "border-radius": "50%",
+                      "margin-top": "5px",
+                      "& when (@countersType = \"circle\")": {
+                        "background": "none",
+                        "border": "1px solid @iconColor",
+                        "color": "@iconColor"
+                      },
+                      "& when (@countersType = \"square\")": {
+                        "border-radius": "0"
+                      },
+                      "& when (@mark)": {
+                        "content": "\"✓\""
+                      }
+                    }
+                  },
+                  "& when not (@stylizedCounters)": {
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-1.6rem",
+                      "content": "\"\\2022\"",
+                      "color": "@iconColor",
+                      "font-weight": "bold",
+                      "font-size": "2rem",
+                      "width": "1.6rem",
+                      "line-height": "1.2"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "_name": "content8",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"content8\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#e43f3f\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n                <h4 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\"><b>CardioRISC has been established to spearhead research into cardiovascular disease and healthcare, nationally and internationally.&nbsp; </b><br><br><b>The CardioRISC proposition is to drive research and teaching across the following themes.&nbsp;</b></h4>\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <div><b><br></b></div><ul>\n                        <li><b>Professional Network Development </b>Fostering and supporting a community of scientists, clinicians and patient and public representatives engaged with developing our understanding of cardiovascular health, disease and care.</li><li><b>Digital Cardiology </b>Developing enhanced modes of interaction between the patient and the clinic, using remote sensors, machine learning methods and algorithmic decision support to improve automated and self home-reporting of patient progress and engagement. <b> &nbsp;\n</b></li><li><b>Biomarker Detection </b>Using machine learning and AI techniques to mine rich public and private data in order to identify new commericalisable diagnostics and prognostics of disease risk and the efficacy of treatment that can make patient care more effective.<b>  \n</b></li><li><b>Therapy Target Detection </b>Using machine learning and AI techniques to mine rich public and private data in order to find potential therapeutic targets associated with disease and treatment.  &nbsp;\n</li><li><b>Community Engagement </b>Developing stronger Personal and Public Involvement and richer community engagement so that research outcomes can be tailored to community needs.  &nbsp;\n</li><li><b>Teaching and Learning </b>Creating new teaching and learning opportunities that deliver&nbsp;<span style=\"font-size: 1.2rem;\">a skilled workforce who can independently and collaboratively drive advances&nbsp;</span></li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "srPmStxOHK",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-y"
         }
       ]
     },
@@ -2059,6 +2129,298 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "list-style": "none",
+                "padding-left": "2.5rem",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "position": "relative",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "position": "relative",
+                    "padding-left": "1rem",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-40px",
+                      "content": "\"\"",
+                      "display": "flex",
+                      "justify-content": "center",
+                      "align-items": "center",
+                      "color": "contrast(@iconColor)",
+                      "background-color": "@iconColor",
+                      "width": "40px",
+                      "height": "40px",
+                      "border-radius": "50%",
+                      "margin-top": "5px",
+                      "& when (@countersType = \"circle\")": {
+                        "background": "none",
+                        "border": "1px solid @iconColor",
+                        "color": "@iconColor"
+                      },
+                      "& when (@countersType = \"square\")": {
+                        "border-radius": "0"
+                      },
+                      "& when (@mark)": {
+                        "content": "\"✓\""
+                      }
+                    }
+                  },
+                  "& when not (@stylizedCounters)": {
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-1.6rem",
+                      "content": "\"\\2022\"",
+                      "color": "@iconColor",
+                      "font-weight": "bold",
+                      "font-size": "2rem",
+                      "width": "1.6rem",
+                      "line-height": "1.2"
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#e43f3f"
+            }
+          },
+          "_name": "content8",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"content8\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#e43f3f\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n                <h4 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\"><b>\n                    Publications</b><br><b>2020</b></h4>\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ul>\n                        <li>Iftikhar A, Bond RR, McGilligan V, Leslie SJ, McShane A, Knoery C, Rjoob K, Peace A (2020).<b> Computational time series analysis of patient referrals to a primary percutaneous coronary intervention service. </b>Health Informatics J, 1460458219899762.&nbsp;\n</li><li><b>\n</b><span style=\"font-size: 1.2rem;\">Knoery CR, Heaton J, Polson R, Bond R, Iftikhar A, Rjoob K, McGilligan V, Peace A, Leslie SJ (2020).</span><b style=\"font-size: 1.2rem;\"> Systematic review of clinical decision support systems for pre-hospital acute coronary syndrome identification. Critical Pathways in Cardiology (in press).</b></li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "srProJ9Rgg",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-z"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "list-style": "none",
+                "padding-left": "2.5rem",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "position": "relative",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "position": "relative",
+                    "padding-left": "1rem",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-40px",
+                      "content": "\"\"",
+                      "display": "flex",
+                      "justify-content": "center",
+                      "align-items": "center",
+                      "color": "contrast(@iconColor)",
+                      "background-color": "@iconColor",
+                      "width": "40px",
+                      "height": "40px",
+                      "border-radius": "50%",
+                      "margin-top": "5px",
+                      "& when (@countersType = \"circle\")": {
+                        "background": "none",
+                        "border": "1px solid @iconColor",
+                        "color": "@iconColor"
+                      },
+                      "& when (@countersType = \"square\")": {
+                        "border-radius": "0"
+                      },
+                      "& when (@mark)": {
+                        "content": "\"✓\""
+                      }
+                    }
+                  },
+                  "& when not (@stylizedCounters)": {
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-1.6rem",
+                      "content": "\"\\2022\"",
+                      "color": "@iconColor",
+                      "font-weight": "bold",
+                      "font-size": "2rem",
+                      "width": "1.6rem",
+                      "line-height": "1.2"
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#e43f3f"
+            }
+          },
+          "_name": "content8",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"content8\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#e43f3f\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n                <h4 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\"><b>\n                    2019</b></h4>\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ul>\n                        <li>McGilligan V, Watterson S, Rjoob K, Chemaly M, Bond R, Iftikhar A, Knoery C, Leslie SJ, McShane A, Bjourson A, Peace A (2019). <b>An exploratory analysis investigating blood protein biomarkers to augment ECG diagnosis of ACS. </b>J Electrocardiology 57 S92-7.&nbsp;\n</li><li>Parton A, McGilligan V, Chemaly M, O’Kane M, Watterson S (2019). <b>New models of atherosclerosis and multi-drug therapeutic interventions. </b>Bioinformatics. 35(14) 2449-57.&nbsp;\n</li><li>McGilligan VE, Chemaly M, Bjourson AJ, Peace A (2019). <b>The NLRP3 Inflammasome as a promising target for Coronary Artery Disease: Current and Pipeline NLRP3 Inhibitors. </b>Online J Cardiovascular Research. 2(3) 1.</li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "srPsig2kIc",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-11"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "list-style": "none",
+                "padding-left": "2.5rem",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "position": "relative",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "position": "relative",
+                    "padding-left": "1rem",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-40px",
+                      "content": "\"\"",
+                      "display": "flex",
+                      "justify-content": "center",
+                      "align-items": "center",
+                      "color": "contrast(@iconColor)",
+                      "background-color": "@iconColor",
+                      "width": "40px",
+                      "height": "40px",
+                      "border-radius": "50%",
+                      "margin-top": "5px",
+                      "& when (@countersType = \"circle\")": {
+                        "background": "none",
+                        "border": "1px solid @iconColor",
+                        "color": "@iconColor"
+                      },
+                      "& when (@countersType = \"square\")": {
+                        "border-radius": "0"
+                      },
+                      "& when (@mark)": {
+                        "content": "\"✓\""
+                      }
+                    }
+                  },
+                  "& when not (@stylizedCounters)": {
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-1.6rem",
+                      "content": "\"\\2022\"",
+                      "color": "@iconColor",
+                      "font-weight": "bold",
+                      "font-size": "2rem",
+                      "width": "1.6rem",
+                      "line-height": "1.2"
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#e43f3f"
+            }
+          },
+          "_name": "content8",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"content8\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#e43f3f\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n                <h4 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\"><b>\n                    2017</b></h4>\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ul>\n                        <li>Chemaly M, McGilligan V, Gibson M, Clauss M, Watterson S, Alexander HD, Bjourson AJ, Peace A (2017).<b> Role of tumour necrosis factor alpha converting enzyme (TACE/ADAM17) and associated proteins in coronary artery disease and cardiac events. </b>Archives of cardiovascular diseases. 110(12) 700-11. \n</li><li>Benson HE, Watterson S, Sharman JL, Mpamhanga CP, Parton A, Southan C, Harmar AJ, Ghazal P (2017). <b>Is systems pharmacology ready to impact upon therapy development? A study on the cholesterol biosynthesis pathway. </b>British J Pharmacology 174(23) 4362-82.&nbsp;</li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "srPsLnz6VE",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-12"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "list-style": "none",
+                "padding-left": "2.5rem",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "position": "relative",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "position": "relative",
+                    "padding-left": "1rem",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-40px",
+                      "content": "\"\"",
+                      "display": "flex",
+                      "justify-content": "center",
+                      "align-items": "center",
+                      "color": "contrast(@iconColor)",
+                      "background-color": "@iconColor",
+                      "width": "40px",
+                      "height": "40px",
+                      "border-radius": "50%",
+                      "margin-top": "5px",
+                      "& when (@countersType = \"circle\")": {
+                        "background": "none",
+                        "border": "1px solid @iconColor",
+                        "color": "@iconColor"
+                      },
+                      "& when (@countersType = \"square\")": {
+                        "border-radius": "0"
+                      },
+                      "& when (@mark)": {
+                        "content": "\"✓\""
+                      }
+                    }
+                  },
+                  "& when not (@stylizedCounters)": {
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "-1.6rem",
+                      "content": "\"\\2022\"",
+                      "color": "@iconColor",
+                      "font-weight": "bold",
+                      "font-size": "2rem",
+                      "width": "1.6rem",
+                      "line-height": "1.2"
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#e43f3f"
+            }
+          },
+          "_name": "content8",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"content8\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#e43f3f\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n                <h4 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\"><b>\n                    2016</b></h4>\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ul>\n                        <li>Henderson R, O’Kane M, McGilligan V, Watterson S (2016).<b> The genetics and screening of familial hypercholesterolaemia.</b> J Biomedical Science. 23(1) 39.</li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "srPsN9Ygmw",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-13"
         }
       ]
     },
@@ -3770,11 +4132,11 @@
           "_sourceTheme": "mobirise5",
           "_customHTML": "<section class=\"map3\" group=\"Maps\">\n    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"map\" title=\"Map 1\" name=\"googleMap\" place-id=\"C-Tric Building, Altnagelvin Hospital, Glenshane Road, Londonderry, Northern Ireland, BT52 6SB\" value=\"C-Tric Building, Altnagelvin Hospital, Glenshane Road, Londonderry, Northern Ireland, BT52 6SB\">\n        <input type=\"map\" title=\"Map 2\" name=\"googleMap2\" place-id=\"Magee Campus, Ulster University, Strand Road, Derry, Northern Ireland\" value=\"Magee Campus, Ulster University, Strand Road, Derry, Northern Ireland\">\n         <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block of parameters -->\n    </mbr-parameters>\n    \n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class mbr-class=\"{'container' : !fullWidth, 'container-fluid' : fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h3 class=\"mbr-section-title mb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Our Locations</b></h3>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <h4 class=\"mbr-section-subtitle mb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">C-Tric</h4>\n                <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <h4 class=\"mbr-section-subtitle mb-3 mt-5 mt-lg-0 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Magee</h4>\n                <div class=\"google-map\" mbr-map=\"googleMap2\"></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "srOrpO55if",
+          "_anchor": "map3-u",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "map3-u"
+          "_params": {}
         },
         {
           "alias": false,
@@ -3819,11 +4181,11 @@
           "_sourceTheme": "mobirise5",
           "_customHTML": "<section class=\"contacts2\" group=\"Contacts\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <!---->\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitleCards\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"range\" inline title=\"Icon Size\" name=\"iconSize\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"BG\" name=\"cardsBg\" value=\"#fafafa\">\n        <select title=\"Amount\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Contacts</b>\n            </h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                Contacts Subtitle\n            </h4>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"card col-12 col-md-6\">\n                <div class=\"card-wrapper\">\n                    <div class=\"image-wrapper\">\n                        <span mbr-icon class=\"mbr-iconfont mbrib-globe\" style=\"color: rgb(228, 63, 63); fill: rgb(228, 63, 63);\"></span>\n                    </div>\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Address</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">CardioRISC, C-Tric Building, Altnagelvin Hospital Campus, Glenshane Road, Derry, Northern Ireland, BT52 6SB&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"image-wrapper\">\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-letter mobi-mbri\" style=\"color: rgb(228, 63, 63); fill: rgb(228, 63, 63);\"></span>\n                    </div>\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Email</b>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            <a href=\"mailto:cardiorisc@cardiorisc.org\" class=\"text-primary\">cardiorisc@cardiorisc.org</a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"image-wrapper\">\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-globe-2 mobi-mbri\" style=\"color: rgb(228, 63, 63); fill: rgb(228, 63, 63);\"></span>\n                    </div>\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\"><b>Ulster University</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"https://www.ulster.ac.uk/cardiovascular\" class=\"text-primary\" target=\"_blank\">www.ulster.ac.uk/cardiovascular</a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"image-wrapper\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-twitter socicon\" style=\"color: rgb(34, 165, 229); fill: rgb(34, 165, 229);\"></span>\n                    </div>\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\"><b>Twitter</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            <a href=\"https://www.twitter.com/cardiorisc\" class=\"text-primary\" target=\"_blank\">@cardiorisc</a></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "srOrwgVR9W",
+          "_anchor": "contacts2-v",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "contacts2-v"
+          "_params": {}
         }
       ]
     },
@@ -4234,11 +4596,11 @@
           "_customHTML": "<section class=\"menu menu1\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3\" max=\"8\" step=\"0.1\" value=\"3\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcons\">\n        <select title=\"Amount\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#000000\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n        <header>Styles</header>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"transparent\">\n        <input type=\"color\" title=\"Color\" name=\"menuBgColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#000000\">\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n        <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    \n                        <img src=\"@PROJECT_PATH@/assets/images/logo-1-96x83.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    \n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-iconFont\"><a class=\"navbar-caption text-secondary text-primary\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">CardioRISC</a></span>\n            </div>\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showIcons || showButtons\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" mbr-if=\"showItems || showIcons || showButtons\">\n                <ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\"><a class=\"nav-link link text-secondary text-primary\" href=\"aboutus.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                            About us</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link link text-secondary text-primary\" href=\"ourteam.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                            Our Team</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link link text-secondary text-primary\" href=\"publications.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Publications</a>\n                    </li><li class=\"nav-item\"><a class=\"nav-link link text-secondary text-primary\" href=\"trackrecord.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Track Record</a></li><li class=\"nav-item\"><a class=\"nav-link link text-secondary text-primary\" href=\"careeropportunities.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Career Opportunities</a></li><li class=\"nav-item\"><a class=\"nav-link link text-secondary text-primary\" href=\"educationtraining.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Education &amp; Training</a></li><li class=\"nav-item\"><a class=\"nav-link link text-secondary text-primary\" href=\"https://twitter.com/cardiorisc\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"socicon socicon-twitter mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(34, 165, 229);\"></span></a></li><li class=\"nav-item\"><a class=\"nav-link link text-secondary text-primary\" href=\"contactus.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contact Us</a></li></ul>\n                <div class=\"icons-menu\" mbr-if=\"showIcons\">\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-facebook socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-twitter socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n                    </a>\n                </div>\n                <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Download Now</a>\n                </div>\n            </div>\n        </div>\n    </nav>\n</section>",
           "_isUserblock": true,
           "_cid": "srKtGrqIa9",
+          "_anchor": "menu1-w",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-w"
+          "_params": {}
         }
       ]
     }

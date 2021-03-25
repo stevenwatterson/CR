@@ -4792,8 +4792,8 @@ a {
   }
 }
 .cid-ssGHLQoQzR {
-  padding-top: 1rem;
-  padding-bottom: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #ffffff;
 }
 @media (min-width: 992px) {
@@ -4809,6 +4809,9 @@ a {
   .cid-ssGHLQoQzR .image-wrapper {
     margin-bottom: 2rem;
   }
+}
+.cid-ssGHLQoQzR .mbr-text {
+  color: #ff6666;
 }
 .cid-ssGIcNAhf3 {
   padding-top: 0rem;
